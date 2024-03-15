@@ -1,0 +1,21 @@
+{
+    "name": "lamia/module-alpaca",
+    "description": "Lamia self learning module",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.4.0||~8.0.0",
+        "magento/framework": "^103",
+        "magento/module-integration": "*"
+    },
+    "type": "magento2-module",
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Lamia\\Alpaca\\": ""
+        }
+    }
+}
