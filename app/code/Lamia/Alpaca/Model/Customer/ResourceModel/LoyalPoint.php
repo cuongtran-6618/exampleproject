@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace Lamia\Alpaca\Model\Customer\ResourceModel;
 
+use Lamia\Alpaca\Api\Data\CustomerLoyalPointInterface;
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 
 class LoyalPoint extends AbstractDb
@@ -20,6 +21,9 @@ class LoyalPoint extends AbstractDb
 
     protected function _construct(): void
     {
-        $this->_init(mainTable: "customer_loyal_point", idFieldName: "entity_id");
+        $this->_init(
+            mainTable: CustomerLoyalPointInterface::TABLE_NAME,
+            idFieldName: CustomerLoyalPointInterface::ENTITY_ID
+        );
     }
 }
