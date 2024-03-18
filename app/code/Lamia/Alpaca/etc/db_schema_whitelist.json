@@ -1,0 +1,15 @@
+{
+    "customer_loyal_point": {
+        "column": {
+            "id": true,
+            "customer_id": true,
+            "point": true,
+            "last_update": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CUSTOMER_LOYAL_POINT_ID_CUSTOMER_ENTITY_ENTITY_ID": true,
+            "CUSTOMER_LOYAL_POINT_CUSTOMER_ID": true
+        }
+    }
+}
