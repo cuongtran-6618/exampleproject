@@ -1,7 +1,7 @@
 {
     "customer_loyal_point": {
         "column": {
-            "id": true,
+            "entity_id": true,
             "customer_id": true,
             "point": true,
             "last_update": true
